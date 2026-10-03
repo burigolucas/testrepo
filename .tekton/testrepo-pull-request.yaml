@@ -27,7 +27,7 @@ spec:
     - name: revision
       value: '{{revision}}'
     - name: output-image
-      value: registry-service.kind-registry/test-component-release:on-pr-{{revision}}
+      value: registry-service.kind-registry/testrepo:on-pr-{{revision}}
     - name: image-expires-after
       value: 5d
     - name: dockerfile
@@ -421,7 +421,7 @@ spec:
       - name: netrc
         optional: true
   taskRunTemplate:
-    serviceAccountName: build-pipeline-test-component
+    serviceAccountName: build-pipeline-testrepo
   workspaces:
     - name: git-auth
       secret:
