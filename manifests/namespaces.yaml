@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: my-team
+  labels:
+    konflux-ci.dev/type: tenant
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: my-team-managed
+  labels:
+    konflux-ci.dev/type: tenant
